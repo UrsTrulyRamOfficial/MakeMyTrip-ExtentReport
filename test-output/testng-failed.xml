@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Framework with extent report, failure screen capture, test data from excel]">
+  <test thread-count="5" name="Count the number of Flights with filters(failed)">
+    <classes>
+      <class name="com.assign.qa.testcases.CountFlightsTest">
+        <methods>
+          <include name="checkResult"/>
+          <include name="flightsCountOneStopFilterTest"/>
+          <include name="flightsCountNoFilterTest"/>
+          <include name="flightsCountNonStopFilterTest"/>
+          <include name="initTest"/>
+        </methods>
+      </class> <!-- com.assign.qa.testcases.CountFlightsTest -->
+    </classes>
+  </test> <!-- Count the number of Flights with filters(failed) -->
+  <test thread-count="5" name="Validate the Flight prices(failed)">
+    <classes>
+      <class name="com.assign.qa.testcases.CheckPricesTest">
+        <methods>
+          <include name="initTest"/>
+          <include name="validateFlightPriceTest"/>
+          <include name="checkResult"/>
+        </methods>
+      </class> <!-- com.assign.qa.testcases.CheckPricesTest -->
+    </classes>
+  </test> <!-- Validate the Flight prices(failed) -->
+</suite> <!-- Failed suite [Framework with extent report, failure screen capture, test data from excel] -->
